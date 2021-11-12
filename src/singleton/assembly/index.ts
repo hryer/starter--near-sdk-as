@@ -1,5 +1,5 @@
 import { storage, Context } from "near-sdk-core"
-
+// nearBindgen -> serialize data or versioning
 @nearBindgen
 export class Contract {
   private message: string = 'hello world'

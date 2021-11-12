@@ -1,6 +1,10 @@
 import { storage, Context } from "near-sdk-as"
-
+// storage -> blockchain storage 
+// context -> blockchain context - send out money
 // return the string 'hello world'
+// Context.contractName -> 
+// Context.sender -? sender contracts
+// Context.predecessor 
 export function helloWorld(): string {
   return 'hello world'
 }
@@ -24,3 +28,6 @@ export function write(key: string, value: string): string {
 function storageReport(): string {
   return `storage [ ${Context.storageUsage} bytes ]`
 }
+
+// generate to assembly file
+// how much data bllablabala
